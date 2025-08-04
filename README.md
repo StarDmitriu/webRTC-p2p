@@ -6,7 +6,7 @@
 
 Чтобы начать использовать сайт, для начала откройте консоль и введите node server.js.
 
-После в файле main.js где вставте ваш LAN ip андрес:
+После в файле main.js вставьте ваш LAN ip андрес:
 ```js
 let socket = new WebSocket('ws://Ваш ip:8080')
 let inviteLink = 'http://Ваш ip:5500'
