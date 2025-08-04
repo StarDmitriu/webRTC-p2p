@@ -6,9 +6,7 @@
 
 Установите webSocket:
 `npm i ws`
-
 Чтобы начать использовать сайт, для начала откройте консоль и введите node server.js.
-
 После в файле main.js вставьте ваш LAN ip андрес:
 ```js
 let socket = new WebSocket('ws://Ваш ip:8080')
