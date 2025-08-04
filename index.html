@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="chat__title">Чат</h1>
+  <p id="inviteLink" onclick="copyLink()"></p>
+  <button onclick="createOffer()" id="createOfferButton" class="connect__button">начать подключение</button>
+  <div id="chatLog"></div>
+  <div id="chat"></div>
+
+
+  <div class="input__container">
+    <input type="text" id="input" class="message__input">
+    <button id="sendButton" onclick="sendMessage()"><img src="img/sendIMG.png" alt=""></button>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

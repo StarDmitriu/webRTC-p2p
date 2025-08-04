@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient( 135deg, #20385c, #5f77a7);
+  height: 100vh;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.chat__title{
+  color: #fff;
+  text-align: center;
+}
+
+.connect__button{
+  width: 200px;
+  height: 50px;
+  color:#fff;
+  background: #202a43;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.connect__button:hover{
+  background: none;
+  border: solid 2px #202a43;
+}
+
+#inviteLink{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.input__container{
+  position: fixed;
+  bottom: 50px;      
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.message__input{
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #202a43;
+  border: 1px solid #1a2239;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+#sendButton{
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#sendButton img{
+  width: 30px;
+  height: 30px;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+}
+
+#chat p{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  margin: 6px 0;
+  word-wrap: break-word;
+}
+
+.message__you{
+  align-self: flex-end;
+  background: #364774;
+}
+
+.message__other{
+  align-self: flex-start;
+  background-color: #202a43;
+}
+
+@media (max-width: 600px) {
+    .message__input{
+      width: 300px;
+    }
+    .chat__title{
+      font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .message__input{
+      width: 250px;
+      height: 30px;
+    }
+    #sendButton img{
+      width: 25px;
+      height: 25px;
+    }
+}
